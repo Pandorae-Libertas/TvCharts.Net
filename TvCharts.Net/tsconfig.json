@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+"removeComments": false,
+"sourceMap": true,
+"target": "es6"
+//"watch": true
+  },
+  "exclude": [
+"node_modules"
+  ]
+}

@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
+
+	<Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+
+		<!--TypeScript-->
+		<!--
+		<Exec Command="tsc Test.ts" WorkingDirectory="wwwroot/js" />
+		<Exec Command="tsc ChartCollection.ts" WorkingDirectory="wwwroot/js" />
+		<Exec Command="tsc ChartManager.ts" WorkingDirectory="wwwroot/js" />
+		<Exec Command="tsc TvCharts.ts" WorkingDirectory="wwwroot/js" />
+		-->
+
+		<!--JavaScript-->
+
+	</Target>
+
+</Project>

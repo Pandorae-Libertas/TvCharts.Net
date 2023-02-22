@@ -1,0 +1,26 @@
+﻿@namespace TvCharts.Net.Components
+
+@using TvCharts.Net.Series
+@using Microsoft.JSInterop
+
+<div style="width: 100%; height: 100%; display: flex; border-radius: 12px;">
+@foreach (TvChart chart in Content)
+{
+<TvChartRenderer Chart="chart" />
+}
+</div>
+
+@code {
+[Inject] public IJSRuntime? JsRuntime { get; set; }
+
+[Parameter] public IEnumerable<TvChart> Content { get; set; } = Enumerable.Empty<TvChart>();
+
+//private TvChart chart = new TvChart
+//{
+//Series = new List<ITvSeries>
+//{
+//new TvCandlestickSeries()
+//}
+//};
+
+}
