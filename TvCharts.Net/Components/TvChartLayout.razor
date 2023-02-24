@@ -13,6 +13,23 @@
 @code {
     [Inject] public IJSRuntime? JsRuntime { get; set; }
 
-    [Parameter] public IEnumerable<TvChart> Content { get; set; } = Enumerable.Empty<TvChart>();
+    //private List<TvChart> _charts;
 
+    //protected override void OnInitialized()
+    //{
+    //    _charts = new List<TvChart>();
+    //}
+
+    //public void AddChart(TvChart chart)
+    //{
+    //    _charts.Add(chart);
+    //    StateHasChanged();
+    //}
+    //public void RemoveChart(TvChart chart)
+    //{
+    //    _charts.Remove(chart);
+    //    StateHasChanged();
+    //}
+
+    [Parameter] public IEnumerable<TvChart> Content { get; set; } = Enumerable.Empty<TvChart>();
 }

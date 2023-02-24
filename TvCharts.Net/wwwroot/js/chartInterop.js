@@ -1,6 +1,6 @@
 ﻿var src = document.createElement("script");
 src.setAttribute("src", "./_content/TvCharts.Net/js/lightweight-charts.js");
-document.getElementsByTagName("head")[0].appendChild(src);
+document.getElementsByTagName("body")[0].appendChild(src);
 
 window.charts = {};
 window.series = {};

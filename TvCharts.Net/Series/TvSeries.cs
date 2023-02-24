@@ -1,6 +1,4 @@
-﻿using System.Xml.Linq;
-
-namespace TvCharts.Net.Series
+﻿namespace TvCharts.Net.Series
 {
     public delegate void SeriesDataChangedHandler(TvSeries series);
 
